@@ -1,15 +1,19 @@
-import {View, Text, Button, Stylesheet} from 'react-native';
+import {View, Text, TextInput, Button, Stylesheet} from 'react-native';
 import { ScrollView } from 'react-native-web';
 export default function App() {
   return(
     <View style={styles.container}> 
     <Text style={styles.text}>
-      This is a test page
+      Library Mobile
     </Text> 
-    <Button title="Submit" onPress={() => alert('Button Pressed!')}></Button> 
+    <TextInput>Enter name of a book here</TextInput>
+    <TextInput>Enter name of the author here</TextInput>
+    <TextInput>Enter isbn here</TextInput>
+    <TextInput>Enter published date here</TextInput>
+    <TextInput>Enter the genre here</TextInput>
+    <TextInput>Enter when the book is added here</TextInput>
 
-    {/* <Image source={{uri:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fartincontext.org%2Fmint-green-color%2F&psig=AOvVaw1qp-jgpeD8eshIYD92X6uu&ust=1755749255006000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKj0w-zBmI8DFQAAAAAdAAAAABAE'}}
-      style={{width: 100, height: 100, marginTop: 20}}/> */} 
+    <Button title="Submit" onPress={() => alert('Book Submitted!')}></Button> 
     
     <ScrollView>
       <Text>List 1</Text>
